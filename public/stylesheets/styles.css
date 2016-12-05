@@ -1,0 +1,272 @@
+body {
+    background-color: #f5f6f7;
+}
+
+#sidebar-wrapper {
+    color: #1c123a;
+    background: #1c123a;
+}
+.sidebar-nav {
+    color: #1c123a;
+    background: #1c123a;
+}
+
+.centerize {
+    text-align: center;
+}
+
+/* Buttons */
+.mybutton {
+    border: 1px solid;
+    border-color: gray;
+    border-bottom: 1px solid !important;
+    color: gray;
+    background-color: #fff;
+    margin-right: 0px;
+}
+
+.mybutton:hover {
+    background-color: #ababab;
+    border-color: gray;
+    border-bottom: none !important;
+}
+
+.mybutton:active {
+    background-color: #a2a2a2;
+    border-color: gray;
+    border-bottom: none !important;
+}
+
+.mybutton:focus {
+    background-color: #a2a2a2;
+    border-color: gray;
+    border-bottom: none !important;
+}
+
+/* Select */
+select[multiple], select[size] {
+    text-align: left;
+}
+
+.btn-custom {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 14px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active:focus,
+.btn-custom:active.focus,
+.btn-custom.active:focus,
+.btn-custom.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-custom:active,
+.btn-custom.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-mystyle {
+  color: #fff;
+  background-color: #5c68bb; /* EF5353 */
+  border-color: #475192; /* #ed3c3c */
+}
+.btn-mystyle:focus,
+.btn-mystyle.focus {
+  color: #fff;
+  background-color: #454e8c; /* #eb2424 */
+  border-color: #353b6b; /* #9b0e0e */
+}
+.btn-mystyle:hover {
+  color: #fff;
+  background-color: #454e8c; /* #eb2424 */
+  border-color: #353b6b; /* #d71414 */
+}
+.btn-mystyle:active,
+.btn-mystyle.active,
+.open > .btn-mystyle.dropdown-toggle {
+  color: #fff;
+  background-color: #454e8c; /* #eb2424 */
+  border-color: #353b6b; /* #d71414 */
+}
+.btn-mystyle:active:hover,
+.btn-mystyle:active:focus,
+.btn-mystyle:active.focus,
+.btn-mystyle.active:hover,
+.btn-mystyle.active:focus,
+.btn-mystyle.active.focus,
+.open > .btn-mystyle.dropdown-toggle:hover,
+.open > .btn-mystyle.dropdown-toggle:focus,
+.open > .btn-mystyle.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #353b6b; /* #d71414 */
+  border-color: #9b0e0e; /* #9b0e0e */
+}
+.btn-mystyle:active,
+.btn-mystyle.active,
+.open > .btn-mystyle.dropdown-toggle {
+  background-image: none;
+}
+
+.btn-mystyle.disabled,
+.btn-mystyle.disabled:hover,
+.btn-mystyle.disabled:focus,
+.btn-mystyle.disabled.focus,
+.btn-mystyle.disabled:active,
+.btn-mystyle.disabled.active,
+.btn-mystyle[disabled],
+.btn-mystyle[disabled]:hover,
+.btn-mystyle[disabled]:focus,
+.btn-mystyle[disabled].focus,
+.btn-mystyle[disabled]:active,
+.btn-mystyle[disabled].active,
+fieldset[disabled] .btn-mystyle,
+fieldset[disabled] .btn-mystyle:hover,
+fieldset[disabled] .btn-mystyle:focus,
+fieldset[disabled] .btn-mystyle.focus,
+fieldset[disabled] .btn-mystyle:active,
+fieldset[disabled] .btn-mystyle.active {
+  background-color: #5c68bb; /* EF5353 */
+  border-color: #475192; /* #ed3c3c */
+}
+
+.btn-mystyle
+.badge {
+  color: #5c68bb;  /* EF5353 */
+  background-color: #fff;
+}
+
+.btn {
+  border-bottom: 1px !important;
+  border-color: gray;
+}
+
+/* Form */
+.form-custom {
+  display: block;
+  width: 33%;
+  height: 50px;
+  padding: 14px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-custom:focus {
+  border-color: #5c68bb; /* EF5353 */
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(92, 104, 187, 0.075), 0 0 8px rgba(92, 104, 187, 0.6);
+  box-shadow: inset 0 1px 1px rgba(92, 104, 187, 0.075), 0 0 8px rgba(92, 104, 187, 0.6);
+}
+.form-custom::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-custom:-ms-input-placeholder {
+  color: #999;
+}
+.form-custom::-webkit-input-placeholder {
+  color: #999;
+}
+.form-custom[disabled], .form-custom[readonly], fieldset[disabled] .form-custom {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.form-custom[disabled], fieldset[disabled] .form-custom {
+  cursor: not-allowed;
+}
+
+/* Back to top button */
+.back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff9000;
+}
+ 
+.back-to-top:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.back-to-top:focus{
+    background-color: #ff6700;
+    color: #fff;
+}
+ 
+.back-to-top i {
+ 
+  font-size: 40px;
+  
+  padding: 3px;
+ 
+}
+
+.plain {
+  color: black;
+  text-decoration: none;
+}
+
+/* Google Maps styling */
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.angular-google-map-container { height: 400px; }
+
+.myContainer {
+  
+}

@@ -1,0 +1,48 @@
+/* TODO */
+Use more directives
+Incorporate $scope.$watch
+POST data from forms
+Make own API.
+  Own list of vehicles and mpg
+  Include some gas stations around Amarillo/Canyon
+For gas prices:
+  Screen-scrape gasbuddy, turn into json
+For car mpg:
+  Use fueleconomy.gov and parse the xml into json
+Remove all unnecessary commented code
+www.mygasfeed.com/ would be perfect, BUT it's so out of date it's useless.
+Incorporate uglify.js in order to minify files
+Fix mouseout for buttons
+For Vehicle schema:
+  In xml, and listed by id rather than make, model, year.
+Encrypt API key(s)
+Determine if home.js and singleton.js are needed and remove if unnecessary
+  Get Date out of home controller!
+Add home page background video
+  Use PayPal's website as an example
+Fix links in menu to properly reflect active state of pages
+Fix "Jump to Top" functionality
+Maybe: Fix linking directly to views
+  NOT NECESSARY, but a nice feature
+
+/* FIXED */
+Installed Express app and dependencies
+  Successfully setup app
+  App runs
+Installed node modules
+Added Views and Controllers
+Added and Fixed Google Maps
+Fixed nodemon.json
+Added Hydrogen theme
+Fixed footer
+Removed sidebar
+Fixed menu style
+Repaired menu animation
+Fixed <span date-now="yyyy"></span>
+Fix style
+Created stateList custom directive
+Renamed footerGeneric directive to Footer
+Removed sideBar directory and files
+Fixed all views to follow the layout in home.view.html
+Fixed where a bug where the footer would call the home controller twice
+

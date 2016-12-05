@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-xs-12">
+    	<car-make></car-make>
+		<!--<p>
+		    Current Conditions: <br />
+		    Temperature: {{ forecast.temperature }} F <br />
+		    Dewpoint: {{ forecast.dewPoint }} F <br />
+		    Humidity: {{ forecast.humidity }} <br />
+		    Wind: {{forecast.windBearing}} at {{ forecast.windSpeed }} <br />
+			Cloud cover: {{ forecast.cloudCover }}% <br />
+		    Ozone: {{ forecast.ozone }} ppm <br />
+		    Chance of Precipitation: {{ forecast.precipProbability }}% <br />
+		    Nearest Storm Direction: {{ forecast.nearestStormBearing }} Distance: {{ forecast.nearestStormDistance }} mi<br />
+		</p>-->
+		<p>
+		    <b>Current Conditions</b> <br />
+		    Temperature: {{ weather.currently.temperature }} F <br />
+		    Dewpoint: {{ weather.currently.dewPoint }} F <br />
+		    Humidity: {{ weather.currently.humidity }} <br />
+		    Wind: {{weather.currently.windBearing}} at {{weather.currently.windSpeed}} <br />
+		    Summary: {{ weather.daily.summary }}
+		</p>
+	</div>
+</div>

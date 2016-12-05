@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html ng-app="gasStationApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Station App</title>
+    
+    <!-- 
+    	//////////////////////////////////////////////////////
+    
+    	FREE HTML5 TEMPLATE 
+    	DESIGNED & DEVELOPED by FREEHTML5.CO
+    		
+    	Website: 		http://freehtml5.co/
+    	Email: 			info@freehtml5.co
+    	Twitter: 		http://twitter.com/fh5co
+    	Facebook: 	https://www.facebook.com/fh5co
+    
+    	//////////////////////////////////////////////////////
+  	-->
+    
+    <!-- Google Webfonts 
+  	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>-->
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Custom CSS -->    
+    <!--<link rel="stylesheet" href="/bootstrap/css/simple-sidebar.css">-->
+    <link rel="stylesheet" href="/angular/ui-bootstrap-2.2.0-csp.css">
+    <!-- Hydrogen theme from https://freehtml5.co/demos/hydrogen/ -->
+    <!-- Animate.css -->
+  	<link rel="stylesheet" href="/hydrogen_theme/css/animate.css">
+  	<!-- Icomoon Icon Fonts-->
+  	<link rel="stylesheet" href="/hydrogen_theme/css/icomoon.css">
+  	<!-- Magnific Popup -->
+  	<link rel="stylesheet" href="/hydrogen_theme/css/magnific-popup.css">
+  	<!-- Salvattore -->
+  	<link rel="stylesheet" href="/hydrogen_theme/css/salvattore.css">
+  	<!-- Theme Style -->
+  	<link rel="stylesheet" href="/hydrogen_theme/css/style.css">
+  	<!-- Modernizr JS -->
+  	<script src="/hydrogen_theme/js/modernizr-2.6.2.min.js"></script>
+  	<!-- FOR IE9 below -->
+  	<!--[if lt IE 9]>
+  	<script src="js/respond.min.js"></script>
+  	<![endif]-->
+  	
+    <!-- Bring in our custom styles -->
+    <!-- This is supposed to be at the bottom, btw -->
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    
+    <!-- Custom font -->
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+    
+    <!-- Setting up Google Maps -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!--<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <!-- end Google Maps -->
+    
+  </head>
+  <body ng-view>
+    
+    <!-- Angular dependencies -->  
+    <script src="/javascripts/lodash.core.js"></script>
+    <script src="/angular/angular.min.js"></script>
+    <script src="/angular/angular-route.min.js"></script>
+    <script src="/angular/angular-sanitize.min.js"></script>
+    <script src="/angular/ui-bootstrap-2.2.0.min.js"></script>
+    <script src="/angular/ui-bootstrap-tpls-2.2.0.min.js"></script>
+    <script src="/angular/angular-simple-logger.js"></script>
+
+    <!-- including all client js files -->
+    <script src="app.js"></script>
+    <!-- Services -->
+    <!--<script src="/common/services/airportData.service.js"></script>
+    <script src="/common/services/airplaneData.service.js"></script>-->
+    <script src="/common/services/vehicle.service.js"></script>
+    <script src="/common/services/selectedData.factory.js"></script>
+    <script src="/common/services/map-loader.js"></script>
+    <!-- Directives -->
+    <script src="/common/directives/stateList/stateList.directive.js"></script>
+    <script src="/common/directives/carMake/carMake.directive.js"></script>
+    <script src="/common/directives/footer/footer.directive.js"></script>
+    <script src="/common/directives/vehicleInfo/vehicleInfo.directive.js"></script>
+    <!--<script src="/common/directives/weatherInfo/weatherInfo.directive.js"></script>
+    <script src="/common/directives/dateNow/dateNow.directive.js"></script>-->
+    <script src="/common/directives/header/header.directive.js"></script>
+    <!-- Controllers -->
+    <script src="/home/home.controller.js"></script>
+    <script src="/vehicle/vehicle.controller.js"></script>
+    <script src="/map/map.controller.js"></script>
+    <script src="/prices/prices.controller.js"></script>
+    <script src="/profile/profile.controller.js"></script>
+    <script src="/login/login.controller.js"></script>
+    <script src="/about/about.controller.js"></script>
+    <script src="/contact/contact.controller.js"></script>
+    <scirpt src="/signup/signup.controller.js"></script>
+    <!--Javascripts  -->
+    <script src="/javascripts/jquery-3.1.1.min.js"></script>
+    <script src="/javascripts/custom.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!--
+    <script>
+      var map;
+      function initMap() {
+          console.log("I am here");
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer></script>
+    -->
+    <script>
+      jQuery(document).ready(function() {
+      
+      var offset = 250;
+      
+      var duration = 300;
+      
+      jQuery(window).scroll(function() {
+      
+      if (jQuery(this).scrollTop() > offset) {
+      
+      jQuery('.back-to-top').fadeIn(duration);
+      
+      } else {
+      
+      jQuery('.back-to-top').fadeOut(duration);
+      
+      }
+      
+      });
+      
+      
+      
+      jQuery('.back-to-top').click(function(event) {
+      
+      event.preventDefault();
+      
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      
+      return false;
+      
+      })
+      
+      });
+    </script>
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src='/angular/angular-google-maps.min.js'></script>
+    
+    <!-- Begin Hydrogen Theme Scripts -->
+    <!-- jQuery -->
+  	<script src="hydrogen_theme/js/jquery.min.js"></script>
+  	<!-- jQuery Easing -->
+  	<script src="hydrogen_theme/js/jquery.easing.1.3.js"></script>
+  	<!-- Bootstrap -->
+  	<script src="hydrogen_theme/js/bootstrap.min.js"></script>
+  	<!-- Waypoints -->
+  	<script src="hydrogen_theme/js/jquery.waypoints.min.js"></script>
+  	<!-- Magnific Popup -->
+  	<script src="hydrogen_theme/js/jquery.magnific-popup.min.js"></script>
+  	<!-- Salvattore -->
+  	<script src="hydrogen_theme/js/salvattore.min.js"></script>
+  	<!-- Main JS -->
+  	<script src="hydrogen_theme/js/main.js"></script>
+    <!-- End Theme Scripts -->
+  	
+  	
+  	<!-- temp --
+  	<link rel="stylesheet" href="/stylesheets/temp.css">-->
+  </body>
+</html>

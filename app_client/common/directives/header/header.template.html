@@ -1,0 +1,127 @@
+<!--<div id="banner" class="page-header">
+  <div class="row">
+    <div class="col-lg-6"></div>
+      <h1>
+        {{ content.title }}
+       <small>{{ content.strapline }}</small>
+      </h1>
+  </div>
+</div>-->
+
+<!--<script src="/common/directives/menu/menu.directive.js"></script>-->
+<div id="fh5co-offcanvass" ng-class="vm.toggle ? 'fh5co-awake' : ''" class="" id="menu-toggle" ng-model="vm.toggle" ng-click="vm.toggle=!vm.toggle">
+	<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">
+	    Menu <i class="icon-cross"></i>
+    </a>
+    <h1 class="fh5co-logo">
+        <a class="navbar-brand" href="index.html">Gas Station App</a>
+    </h1>
+    <ul>
+      <div ng-if="vm.me == 'home'">
+    	  <li class="active"><a href="/home">Home</a></li>
+  	  </div>
+  	  <div ng-if="vm.me != 'home'">
+    	  <li><a href="/home">Home</a></li>
+  	  </div>
+  	  <div ng-if="vm.me == 'vehicle'">
+        <li class="active"><a href="/vehicle">Vehicle</a></li>
+      </div>
+      <div ng-if="vm.me != 'vehicle'">
+        <li><a href="/vehicle">Vehicle</a></li>
+      </div>
+      <div ng-if="vm.me == 'map'">
+        <li class="active"><a href="/map">Map</a></li>
+      </div>
+      <div ng-if="vm.me != 'map'">
+        <li><a href="/map">Map</a></li>
+      </div>
+      <div ng-if="vm.me == 'prices'">
+        <li class="active"><a href="/prices">Gas Prices</a></li>
+      </div>
+      <div ng-if="vm.me != 'prices'">
+        <li><a href="/prices">Gas Prices</a></li>
+      </div>
+      <div ng-if="vm.me == 'profile'">
+        <li class="active"><a href="/profile">Profile</a></li>
+      </div>
+      <div ng-if="vm.me != 'profile'">
+        <li><a href="/profile">Profile</a></li>
+      </div>
+      <div ng-if="vm.me == 'login'">
+        <li class="active"><a href="/login">Login/Signup</a></li>
+      </div>
+      <div ng-if="vm.me != 'login'">
+        <li><a href="/login">Login/Signup</a></li>
+      </div>
+      <div ng-if="vm.me == 'about'">
+        <li class="active"><a href="/about">About</a></li>
+      </div>
+      <div ng-if="vm.me != 'about'">
+        <li><a href="/about">About</a></li>
+      </div>
+      <div ng-if="vm.me == 'contact'">
+        <li class="active"><a href="/contact">Contact</a></li>
+      </div>
+      <div ng-if="vm.me != 'contact'">
+        <li><a href="/contact">Contact</a></li>
+      </div>
+    </ul>
+    <h3 class="fh5co-lead">Connect with us</h3>
+    <p class="fh5co-social-icons">
+    	<a href="#"><i class="icon-twitter"></i></a>
+    	<a href="#"><i class="icon-facebook"></i></a>
+    	<a href="#"><i class="icon-instagram"></i></a>
+    	<a href="#"><i class="icon-dribbble"></i></a>
+    	<a href="#"><i class="icon-youtube"></i></a>
+    </p>
+</div>
+
+<div id="fh5co-header" role="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+                <a href="#"
+                   class="fh5co-menu-btn js-fh5co-menu-btn"
+                   id="menu-toggle"
+                   ng-model="vm.toggle"
+                   ng-click="vm.toggle=!vm.toggle">
+                    Menu <i class="icon-menu"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">Gas Price Checker</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+<div id="fh5co-offcanvass">
+	<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">Menu <i class="icon-cross"></i> </a>
+	<h1 class="fh5co-logo"><a class="navbar-brand" href="index.html">Hydrogen</a></h1>
+	<ul>
+		<li class="active"><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="pricing.html">Pricing</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<h3 class="fh5co-lead">Connect with us</h3>
+	<p class="fh5co-social-icons">
+		<a href="#"><i class="icon-twitter"></i></a>
+		<a href="#"><i class="icon-facebook"></i></a>
+		<a href="#"><i class="icon-instagram"></i></a>
+		<a href="#"><i class="icon-dribbble"></i></a>
+		<a href="#"><i class="icon-youtube"></i></a>
+	</p>
+</div>
+<header id="fh5co-header" role="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#" class="fh5co-menu-btn js-fh5co-menu-btn">Menu <i class="icon-menu"></i></a>
+				<a class="navbar-brand" href="index.html">Hydrogen</a>		
+			</div>
+		</div>
+	</div>
+</header>
+-->

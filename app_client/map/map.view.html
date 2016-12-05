@@ -1,0 +1,51 @@
+<div id="wrapper">
+    <header></header>
+    <!-- Page Content -->
+    <div id="fh5co-main">
+        <div class="container">
+			<div class="row">
+				<div class="col-md-12">
+                    <h1>{{vm.content}}</h1>
+                    <p>This is a map!</p>
+                    <div class="col-md-6">
+                        <br>
+                        <h2>Find Near Me</h2>
+                        <!-- Code to get the user's location -->
+                        <p>Click the button to find locations near you.</p>
+                        <button type="button" class="btn btn-default btn-link" onclick="getLocation()">Find near me</button><!--btn-link-->
+                        <p id="demo"></p>
+                        <!-- End user location code -->
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Alternatively, search around</h2>
+                        <p>Select your state:</p>
+                        <state-list></state-list>
+                        
+                        <!--<div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">HTML</a></li>
+                              <li><a href="#">CSS</a></li>
+                              <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>-->
+                        
+                        <p>Search by city:</p>
+                        <input class="form-control" placeholder="Enter city" type="text" />
+                        <br>
+                        <!--<button type="submit" class="btn btn-default" onclick="getLocation()">Search</button>-->
+                        <!--<button type="button" class="btn btn-default btn-link mybutton" id="menu-toggle" ng-model="" ng-click="=!">Search</button>-->
+                        <button type="button" class="btn btn-default btn-link">Search</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- http://stackoverflow.com/questions/30127442/google-maps-doesnt-work-in-angular-directive -->
+            <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'></ui-gmap-google-map>
+            <footer></footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
