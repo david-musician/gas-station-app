@@ -20,6 +20,19 @@
         
         vm.content = "Vehicle Stuff";
         
+        /* Didn't have time to set it up
+        vm.getVehicleData = function() {
+            VehicleData.getAirports()
+                .success(function(data) {
+                vm.vehicles = data;
+                console.log(vm.vehicles);
+            })
+            .error(function(e) {
+                console.log(e);
+            });
+        }
+        */
+        
         vm.getWeather = function () {
             var lat = 35.8652473;
             var lng = -101.9519361;
