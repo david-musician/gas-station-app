@@ -1,5 +1,8 @@
 # FUEL EFFICIENCE
 
+## Big Issues
+* Can't get my api to come through - error: "syntax error: unexpected token :"
+
 ## TODO
 * Incorporate $scope.$watch
 * POST data from forms
