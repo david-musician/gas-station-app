@@ -18,14 +18,15 @@ var app = express();
 // app.set('views', path.join(__dirname, 'app_api', 'views'));
 // app.set('view engine', 'angular');
 
-// icon from https://www.iconfinder.com/icons/111078/gas_icon
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app_client')));
+
+// icon from https://www.iconfinder.com/icons/111078/gas_icon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use('/', index);
 //app.use('/users', users);
@@ -76,13 +77,14 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = req.app.get('env') === 'production' ? err : {};
 
   // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
 
+/*
 console.log('Here I am1!')
 // Screen scraping code
 // https://scotch.io/tutorials/scraping-the-web-with-node-js
@@ -133,5 +135,6 @@ console.log('Here I am!')
 
 app.listen('8081')
 console.log('Magic happens on port 8081');
+*/
 
 module.exports = app;

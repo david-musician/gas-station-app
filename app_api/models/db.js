@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 //var dbURI = 'mongodb://localhost/airplane';
-var dbURI = 'mongodb://airplane:airplane@ds157487.mlab.com:57487/ahuimanu';
+var dbURI = 'mongodb://davidmusician:dis1sap@ssw0rd*!@ds041586.mlab.com:41586/dmarattdatabase';
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
 }
@@ -47,5 +47,5 @@ process.on('SIGTERM', function() {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./aircraftData');
-require('./airportData');
+require('./vehicleData');
+// require('./airportData');

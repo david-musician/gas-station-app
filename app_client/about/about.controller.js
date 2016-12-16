@@ -19,7 +19,7 @@
     
     vm.me = "about";
     
-    vm.content = "About Gas Station App";
+    vm.content = "About Fuel Efficience";
     
     vm.selectedDepartureICAO = "";
     vm.selectedArrivalICAO = "";

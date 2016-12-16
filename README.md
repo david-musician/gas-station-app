@@ -3,15 +3,11 @@
 ## TODO
 * Incorporate $scope.$watch
 * POST data from forms
-* Make own API.
-* Own list of vehicles and mpg
 * Include some gas stations around Amarillo/Canyon
 * For gas prices: Screen-scrape gasbuddy, turn into json
-* For car mpg: Use fueleconomy.gov
 * Remove all unnecessary, commented code
 * Incorporate uglify.js in order to minify files
 * Fix mouseout for buttons
-* For Vehicle schema: In xml, and listed by id rather than make, model, year.
 * Encrypt and Hide API key(s)
 * Determine if home.js and singleton.js are needed and remove if unnecessary
 * Fix "Jump to Top" functionality
@@ -43,8 +39,11 @@
 * Fixed where a bug where the footer would call the home controller twice
 * Added directives
 * Fixed links in menu to properly reflect active state of pages
+* Created vehicle schemas and uploaded to mLab (my own API)
 
 ## REFERENCES
+Heroku App: https://damp-meadow-93246.herokuapp.com/
+Github Repo: https://github.com/david-musician/gas-station-app
 
 Favicon:
 https://www.iconfinder.com/icons/111078/gas_icon (Not used at the moment)
